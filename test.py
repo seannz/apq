@@ -68,6 +68,6 @@ if __name__ == '__main__':
 
         dynamic_proxyless.set_active_subnet(**info)
         dynamic_proxyless.set_quantization_policy(**q_info)
-
+        print(dynamic_proxyless)
         acc = run_manager.validate(is_test=True)
         print('Accuracy: {:.1f}'.format(acc[1]))
